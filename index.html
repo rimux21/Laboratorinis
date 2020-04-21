@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+    <script src="lang.js"></script>
+    <title>Saitas</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <!--Navbar-->
+    <div id="header">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#" class="navbar-brand"><h3>Portfolio</h3></a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#About" key="About" class="nav-link">About me</a></li>
+                        <li><a href="#Skills" key="Skills" class="nav-link">Skills</a></li>
+                        <li><a href="#Experience" key="Experience" class="nav-link">Experience</a></li>
+                        <li><a href="#Contact" key="Contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" key="butn" class="btn btn-secondary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Languages</button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                  <a class="dropdown-item" id="en" key="english" href="#">English</a>
+                                  <a class="dropdown-item" id="lt" key="lithuanian" href="#">Lithuanian</a>
+                            </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+
+    <!--Background img-->
+    <div id="bg-img"></div>
+
+    <!--About me-->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="AboutData">
+                        <div class="card bg-white">
+                            <div class="card-title my-5">
+                                <div class="media">
+                                <img src="img/person.jpg" width="250" height="250" class="img-fluid rounded-top mx-5 d-none d-lg-block">
+                                    <div class="media-body">
+                                        <h3 key="hi" class="display-4 ml-5">I'm Rimantas Kripas</h3>
+                                        <p key="paragraph" class="text-muted ml-5" >Web designer</p>
+                                        <div class="container">
+                                            <table class="table table-responsive ml-4">
+                                                <tr>
+                                                    <td key="age" class="text-muted">Age</td>
+                                                    <td>:</td>
+                                                    <td key="age1" class="f">20 years old</td>
+                                                </tr>
+                                                <tr>
+                                                    <td key="email" class="text-muted">Email</td>
+                                                    <td>:</td>
+                                                    <td>rimantas.kripas@stud.vgtu.lt</td>
+                                                </tr>
+                                                <tr>
+                                                    <td key="number" class="text-muted">Phone</td>
+                                                    <td>:</td>
+                                                    <td>+37061234567</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bd-danger">
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x mx-3"></i></a>
+                            <a href="https://twitter.com/explore"><i class="fa fa-twitter fa-2x mx-3"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa fa-youtube fa-2x mx-3"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x mx-3"></i></a>
+                            <a href="https://github.com/"><i class="fa fa-github fa-2x mx-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <span key="first" class="bg-danger text-white">About Me</span>
+                    <hr class="bg-danger">
+                    <p class="lead text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit iaculis est, sed pretium libero suscipit nec. Fusce hendrerit blandit eros nec iaculis. In tempus metus sed arcu porttitor tincidunt. Nulla tincidunt, sem pulvinar faucibus pellentesque, turpis tellus interdum urna, non dignissim risus tortor ac lorem. Nullam et dui vel purus rutrum volutpat sit amet sed purus. Curabitur commodo turpis id tristique bibendum. Donec quam ante, venenatis a magna vel, luctus blandit risus. Vivamus eget elit lorem.Etiam augue ex, sollicitudin ut condimentum et, luctus eget orci. In viverra fringilla nisl, ut ornare massa facilisis sit amet. Mauris pretium lacus sed mi tempor dignissim. Nunc nisl ipsum, lobortis vitae lectus sed, pretium blandit tortor. Curabitur sed nibh eu felis aliquet euismod et et augue. Fusce in nunc purus. Cras congue congue ex, at elementum est dignissim a. Sed commodo leo vel ligula varius pretium.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Skill-->
+    <div id="Skills" class="mt-5">
+        <div class="container">
+            <span key="second" class="bg-danger text-white">MySkills</span>
+            <hr class="bg-danger">
+            <div class="row">
+                <div class="col">
+                    <div class="card bg-white">
+                        <h3 key="html" class="ml-3 my-3">HTML5 Language</h3>
+                        <div class="progress mx-3">
+                            <div class="progress-bar bg-dark" style="width:55%">55%</div>
+                        </div>
+                        <h3 key="css" class="ml-3 my-3">CSS Language</h3>
+                        <div class="progress mx-3">
+                            <div class="progress-bar bg-dark" style="width:35%">35%</div>
+                        </div>
+                        <h3 key="java" class="ml-3 my-3">JavaScript Programming</h3>
+                        <div class="progress mx-3">
+                            <div class="progress-bar bg-dark" style="width:15%">15%</div>
+                        </div>
+                        <h3 key="c++" class="ml-3 my-3">C++ Programming</h3>
+                        <div class="progress mx-3">
+                            <div class="progress-bar bg-dark" style="width:70%">70%</div>
+                        </div>
+                        <h3 key="sql" class="ml-3 my-3">SQL Server</h3>
+                        <div class="progress mx-3">
+                            <div class="progress-bar bg-dark" style="width:40%">40%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Experience-->
+
+    <div id="Experience">
+        <div class="container mt-5">
+            <span key="exp" class="bg-danger text-white">Experience</span>
+            <hr class="bg-danger">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card bg-white">
+                        <img  src="img/github.jpg" width="200" height="80" class="img-fluid m-auto py-3">
+                        <h3 key="git" class="text-center text-danger">I'm Github User</h3>
+                        <p class="lead text-justify p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit iaculis est, sed pretium libero suscipit nec. Fusce hendrerit blandit eros nec iaculis. In tempus metus sed arcu porttitor tincidunt. Nulla tincidunt, sem pulvinar faucibus pellentesque, turpis tellus interdum urna, non dignissim risus tortor ac lorem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card bg-white">
+                        <img src="img/Youtube.jpg" width="200" height="80" class="img-fluid m-auto py-3">
+                        <h3 key="yt" class="text-center text-danger">I'm Video Editor</h3>
+                        <p class="lead text-justify p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit iaculis est, sed pretium libero suscipit nec. Fusce hendrerit blandit eros nec iaculis. In tempus metus sed arcu porttitor tincidunt. Nulla tincidunt, sem pulvinar faucibus pellentesque, turpis tellus interdum urna, non dignissim risus tortor ac lorem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card bg-white">
+                        <img src="img/Google.jpg" width="200" height="80" class="img-fluid m-auto py-3">
+                        <h3 key="google" class="text-center text-danger">I'm Google User</h3>
+                        <p class="lead text-justify p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit iaculis est, sed pretium libero suscipit nec. Fusce hendrerit blandit eros nec iaculis. In tempus metus sed arcu porttitor tincidunt. Nulla tincidunt, sem pulvinar faucibus pellentesque, turpis tellus interdum urna, non dignissim risus tortor ac lorem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card bg-white">
+                        <img src="img/Microsoft.jpg" width="200" height="80" class="img-fluid m-auto py-4">
+                        <h3 key="mic" class="text-center text-danger">I'm Microsoft Instructor</h3>
+                        <p class="lead text-justify p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit iaculis est, sed pretium libero suscipit nec. Fusce hendrerit blandit eros nec iaculis. In tempus metus sed arcu porttitor tincidunt. Nulla tincidunt, sem pulvinar faucibus pellentesque, turpis tellus interdum urna, non dignissim risus tortor ac lorem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact-->
+
+    <div id="Contact">
+        <div class="container mt-5">
+            <span key="cont" class="bg-danger text-white">Contact Me</span>
+            <hr class="bg-danger">
+            <div class="row">
+                <div class="col">
+                    <div class="card bg white">
+                        <div class="card-header">
+                            <h4 key="bilow" class="my-4">Contact Me Below</h4>
+                            <div id="error"></div>
+                                <form  id="form">
+                                <div class="form-group">
+                                    <input id="name" data-translate="user" key="user"  name="name" type="text" placeholder="Name"class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <input id="email" data-translate="email" key="email" name="email" type="email" placeholder="Email"class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" data-translate="message" key="message" name="message" type="message" placeholder="Leave your message here" class="form-control"></textarea>
+                                </div>
+                                <button key="buton" type="submit"class="btn btn-danger text -white">Submit Now</button>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+
+<!--Footer-->
+<div class="container-fluid bg-dark">
+    <div class="row">
+        <div class="col">
+            <div class="container">
+                <p key="foter" class="text-white pt-3 text-center">Website Designed By: Rimantas Kripas © 2020 Copyright</p>
+                <iframe src="http://free.timeanddate.com/clock/i791mrcs/n660/tcf90/pc9f0/ftbi/th2" frameborder="0" width="122" height="18"></iframe>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>
